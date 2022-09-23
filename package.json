@@ -4,13 +4,15 @@
   "description": "Autograder for CS classes. ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "node test.js",
+    "start": "node index.js",
+    "install-docker": "curl -fsSL https://get.docker.com -o get-docker.sh; sh get-docker.sh"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dockerode": "^3.3.4",
     "dotenv": "^16.0.2",
     "express": "^4.18.1"
   }
